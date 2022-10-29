@@ -1,7 +1,9 @@
 task1:
   container:
     dockerfile: Dockerfile.xenial
+  test_script: ls
 
 task2:
   container:
     dockerfile: Dockerfile.focal
+  test_script: ls
