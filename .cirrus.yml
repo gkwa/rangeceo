@@ -2,5 +2,5 @@ efficient_task:
   container:
     dockerfile: Dockerfile.xenial
     additional_containers:
-    - name: taylorm/debbuilder_focal
+    - name: debbuilder_focal
       dockerfile: Dockerfile.focal
