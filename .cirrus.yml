@@ -1,5 +1,4 @@
 efficient_task:
   container:
-    dockerfile: ci/Dockerfile.xenial
-
+    dockerfile: Dockerfile.xenial
   test_script: ls
