@@ -1,6 +1,7 @@
-efficient_task:
+task1:
   container:
     dockerfile: Dockerfile.xenial
-    additional_containers:
-    - name: debbuilderfocal
-      dockerfile: Dockerfile.focal
+
+task2:
+  container:
+    dockerfile: Dockerfile.focal
