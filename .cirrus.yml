@@ -4,10 +4,10 @@ test1_task:
     dockerfile: Dockerfile.xenial
   matrix:
   - name: Test
-    test_script: ls
+    test_script: ls -lat
 test2_task:
   container:
     dockerfile: Dockerfile.focal
   matrix:
   - name: Test
-    test_script: ls
+    test_script: ls -lat
