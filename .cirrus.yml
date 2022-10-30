@@ -2,11 +2,8 @@ auto_cacellation: false
 build_xenial_container_task:
   container:
     dockerfile: Dockerfile.xenial
+  test_script: cat /etc/os-release
 build_focal_container_task:
   container:
     dockerfile: Dockerfile.focal
-test_task:
-  depends_on:
-    - build_focal_container
-    - build_xenial_container
-  script: ls
+  test_script: cat /etc/os-release
