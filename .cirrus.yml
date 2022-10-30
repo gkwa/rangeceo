@@ -10,4 +10,4 @@ build_focal_container_task:
 build_bump2version_container_task:
   container:
     dockerfile: Dockerfile.bump2version
-  test_script: bump2version --version
+  test_script: bump2version --help
