@@ -1,0 +1,5 @@
+FROM python:latest
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+pip install --root-user-action=ignore bump2version

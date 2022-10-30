@@ -7,3 +7,7 @@ build_focal_container_task:
   container:
     dockerfile: Dockerfile.focal
   test_script: cat /etc/os-release
+build_bump2version_container_task:
+  container:
+    dockerfile: Dockerfile.bump2version
+  test_script: bump2version --version
