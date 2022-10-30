@@ -1,13 +1,3 @@
 auto_cacellation: false
-build_xenial_container_task:
-  container:
-    dockerfile: Dockerfile.xenial
-  test_script: cat /etc/os-release
-build_focal_container_task:
-  container:
-    dockerfile: Dockerfile.focal
-  test_script: cat /etc/os-release
-build_bump2version_container_task:
-  container:
-    dockerfile: Dockerfile.bump2version
-  test_script: bump2version --help
+test_task:
+  script: docker run -ti ubuntu bash ls /
