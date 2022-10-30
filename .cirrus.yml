@@ -1,13 +1,12 @@
 auto_cacellation: false
-test1_task:
+build_xenial_container_task:
   container:
     dockerfile: Dockerfile.xenial
-  matrix:
-  - name: Test
-    test_script: ls -lat
-test2_task:
+build_focal_container_task:
   container:
     dockerfile: Dockerfile.focal
-  matrix:
-  - name: Test
-    test_script: ls -lat
+test_task:
+  depends_on:
+    - build_focal_container
+    - build_xenial_container
+  script: ls
